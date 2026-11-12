@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Como Vai a Tua Fé?</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* FORMAS DECORATIVAS */
+
+        .circulo-azul {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background: #0d3b66;
+            border-radius: 50%;
+            top: -100px;
+            left: -90px;
+            opacity: 0.08;
+        }
+
+        .circulo-dourado {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 25px solid #d4af37;
+            border-radius: 50%;
+            bottom: -80px;
+            right: -70px;
+            opacity: 0.12;
+        }
+
+        .quadrado {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #0d3b66;
+            transform: rotate(25deg);
+            right: -70px;
+            top: 80px;
+            opacity: 0.08;
+        }
+
+        .linha {
+            position: absolute;
+            width: 300px;
+            height: 2px;
+            background: #d4af37;
+            transform: rotate(-35deg);
+            left: -100px;
+            bottom: 120px;
+            opacity: 0.25;
+        }
+
+        .pontos {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-image: radial-gradient(#0d3b66 2px, transparent 2px);
+            background-size: 15px 15px;
+            right: 40px;
+            bottom: 80px;
+            opacity: 0.15;
+        }
+
+        /* CONTEÚDO */
+
+        .container {
+            width: 90%;
+            max-width: 430px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            width: 260px;
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 35px;
+        }
+
+        .texto {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 28px;
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .botao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .botao:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .facebook {
+            background: #1877f2;
+        }
+
+        .instagram {
+            background: linear-gradient(
+                45deg,
+                #feda75,
+                #fa7e1e,
+                #d62976,
+                #962fbf,
+                #4f5bd5
+            );
+        }
+
+        .tiktok {
+            background: #111111;
+        }
+
+        .rodape {
+            margin-top: 35px;
+            font-size: 13px;
+            color: #888888;
+        }
+
+        @media (max-width: 500px) {
+
+            .logo {
+                width: 220px;
+            }
+
+            .texto {
+                font-size: 15px;
+            }
+
+            .botao {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FORMAS DECORATIVAS -->
+    <div class="circulo-azul"></div>
+    <div class="circulo-dourado"></div>
+    <div class="quadrado"></div>
+    <div class="linha"></div>
+    <div class="pontos"></div>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container">
+
+        <!-- LOGO -->
+        <img
+            src="static/logo.png"
+            alt="Como Vai a Tua Fé?"
+            class="logo"
+        >
+
+        <p class="texto">
+            Um espaço para fortalecer a fé, encontrar esperança
+            e lembrar que Deus está sempre presente.
+        </p>
+
+
+        <!-- REDES SOCIAIS -->
+        <div class="botoes">
+
+            <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="botao facebook"
+            >
+                Facebook
+            </a>
+
+            <a
+                href="https://instagram.com/"
+                target="_blank"
+                class="botao instagram"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://tiktok.com/"
+                target="_blank"
+                class="botao tiktok"
+            >
+                TikTok
+            </a>
+
+        </div>
+
+
+        <div class="rodape">
+            © 2026 • Como Vai a Tua Fé?
+        </div>
+
+    </div>
+
+</body>
+</html>
